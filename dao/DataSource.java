@@ -18,11 +18,11 @@ public class DataSource {
 
     private List<Food> foodList = new LinkedList<>() {
         {
-            add(new Food("Чай", 1, 0));
-            add(new Food("Хлеб", 2, 27));
-            add(new Food("Сахар", 3, 100));
-            add(new Food("Колбаса", 4, 0));
-            add(new Food("Банан", 5, 30));
+//            add(new Food("Чай", 1, 0));
+//            add(new Food("Хлеб", 2, 27));
+//            add(new Food("Сахар", 3, 100));
+//            add(new Food("Колбаса", 4, 0));
+//            add(new Food("Банан", 5, 30));
         }
     };
 

@@ -4,18 +4,20 @@ public class Food {
     private String name;
     private final int id;
     private int carbohydrate;
+    private int he;
 
     public static final Food NULL_FOOD = new Food();
 
-    public Food(String name, int id, int carbohydrate) {
+    public Food(int id, String name, int he, int carbohydrate) {
         this.name = name;
         this.id = id;
+        this.he = he;
         this.carbohydrate = carbohydrate;
 
     }
 
     public Food() {
-    this("", 0,0);
+        this(0, "", 0, 0);
     }
 
     public Food clone() {
@@ -29,7 +31,7 @@ public class Food {
     public Food clone(int newId) {
         if (this == NULL_FOOD) return NULL_FOOD;
 
-        return new Food(name, newId, carbohydrate);
+        return new Food(newId, name, he, carbohydrate);
     }
 
     public String getName() {
@@ -52,8 +54,12 @@ public class Food {
         this.carbohydrate = carbohydrate;
     }
 
+    public int getHe() {
+        return he;
+    }
+
     @Override
     public String toString() {
-        return "Еда - " + name + ", номер - " + id + ", углеводы - " + carbohydrate;
+        return id + " - " + name + ", ХЕ - " + he + ", угл. в 100гр - " + carbohydrate;
     }
 }
