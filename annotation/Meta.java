@@ -4,11 +4,11 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.reflect.Method;
 
-//@Retention(RetentionPolicy.RUNTIME)
-//@interface MyAnno{
-//    String str();
-//    int value();
-//}
+@Retention(RetentionPolicy.RUNTIME)
+@interface MyAnno{
+   String str();
+    int value();
+}
 
 public class Meta {
 
