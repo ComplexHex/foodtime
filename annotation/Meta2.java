@@ -31,26 +31,21 @@ class Meta2 {
             Annotation annos[] = ob.getClass().getAnnotations();
 
             System.out.println("All annotations for class Meta2:");
-            for (Annotation a : annos){
+            for (Annotation a : annos) {
                 System.out.println(a);
-
-                System.out.println();
-
-                Method m = ob.getClass().getMethod("myMeth");
-                annos = m.getAnnotations();
-
-                System.out.println("All annotationa for method myMeth");
-                for (Annotation a1 : annos){
-                    System.out.println(a1);
-
-                }
-
-
             }
 
+            System.out.println();
 
+            Method m = ob.getClass().getMethod("myMeth");
+            annos = m.getAnnotations();
 
-        }catch (NoSuchMethodException e){
+            System.out.println("All annotations for method myMeth");
+            for (Annotation a1 : annos) {
+                System.out.println(a1);
+            }
+
+        } catch (NoSuchMethodException e) {
             System.out.println("Method not found");
         }
     }
