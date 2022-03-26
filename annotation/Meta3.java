@@ -13,6 +13,7 @@ import java.lang.reflect.Method;
 
 public class Meta3 {
 
+    @MyAnno3
     public static void myMeth() {
         Meta3 meta3 = new Meta3();
 
